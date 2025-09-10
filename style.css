@@ -1,0 +1,158 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  background: #d0f0c0; /* hijau pastel */
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navbar (Flexbox) */
+.navbar {
+  background: #ff2f92; /* pink fanta */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar .nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar .nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section (Flexbox) */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 5%;
+  gap: 2rem;
+}
+
+.hero-text {
+  flex: 1 1 300px;
+}
+
+.hero-text h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.cta-btn {
+  background: #ff2f92;
+  color: white;
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.cta-btn:hover {
+  background: #ff1493;
+}
+
+.hero-img {
+  flex: 1 1 250px;
+  text-align: center;
+}
+
+.hero-img img {
+  max-width: 250px;
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* Sections (About & Contact) */
+.box {
+  background: white;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  max-width: 900px;
+}
+
+.box h2 {
+  margin-bottom: 1rem;
+}
+
+/* Footer (Flexbox) */
+footer {
+  background: #ff2f92;
+  color: white;
+  text-align: center;
+  padding: 2rem 5%;
+}
+
+footer h2 {
+  margin-bottom: 1rem;
+}
+
+footer .hobi-list {
+  list-style: none;
+  display: flex;               
+  justify-content: center;     
+  flex-wrap: wrap;             
+  gap: 2rem;                   
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+}
+
+footer .hobi-list li {
+  font-size: 1rem;
+}
+
+footer p {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+  .hero-text h1 {
+    font-size: 1.5rem;
+  }
+  .hero-text {
+    padding: 0;
+    margin: 0%;
+    flex: 1 1 150px;
+  }
+}
